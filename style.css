@@ -35,3 +35,7 @@ button {
   font-size: 16px;
   cursor: pointer;
 }
+button:hover {
+	background-color: slategrey;
+	
+}
