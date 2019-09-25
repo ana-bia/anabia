@@ -19,26 +19,26 @@ header {
     font-weight: 400;
     letter-spacing: 3px;
     line-height: .8;
-    padding-top: 50px;
     font-family: 'Montserrat', sans-serif;
     text-shadow: 3.5px 1px #006C84;
     text-decoration: underline wavy;
     background-color: #6EB5C0;
     color: #E2E8E4;
     padding: 30px 0 50px;
+    padding-top: 50px;
 }
 
 span {
   letter-spacing: 5px;
   font-size: 40px;
   line-height: 1;
-  text-shadow: -2.5px 1px #becfce;
+  text-shadow: -2.5px 1px #006C84;
   font-family: OCR A Std, monospace;
 }
 
 h1 {
   text-align: center;
-  color: #B56357;
+  color: #E2E8E4;
 }
 
 .topnav {
@@ -64,10 +64,11 @@ h1 {
 }
 
 #hi {
-  background-color: #B4DBC0;
+  background-color: #D09683;
   margin: 50px 75px; 
-  color: #a7B3a5;
+  color: #E2E8E4;
   height: 1000px;
+  opacity: 0.75;
 }
 
 button {
@@ -77,8 +78,8 @@ button {
   -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
   background-color: white; 
-  color: #A7B3A5; 
-  border: 5px solid #B4DBC0;
+  color: #006C84; 
+  border: 5px solid #6EB5C0;
   border-radius: 24px;
   text-align: center;
   font-size: 16x; /* font-size is not changing */
@@ -86,7 +87,29 @@ button {
 }
 
 button:hover {
-  background-color: #B4DBC0;
-  color: #e5E3EA;
+  background-color: #6EB5C0;
+  color: #E2E8E4;
   box-shadow: 0 12px 16px 0 rgba(180, 219, 192,0.24),0 17px 50px 0 rgba(180, 219, 192,0.19);
+}
+
+footer {
+  float: left;
+  display: block;
+  color: black;
+  line-height: 2px;
+  text-decoration: none;
+  overflow: hidden;
+  background-color: #D09683;
+  width: 100%;
+  opacity: 0.75;
+  padding-left: 10px;
+}
+
+pre {
+  font-family: "Times New Roman", Times, serif;
+  color: #E2E8E4;  
+}
+
+h4 {
+  color: #006C84;
 }
