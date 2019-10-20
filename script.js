@@ -48,11 +48,28 @@ function centuryFromYear(){
   }
 
   else if (Year > 1){
-    var Century = Math.floor(Year / 100 + 1);
+    var Century = Math.ceil(Year / 100);
       alert (Year + " is in the " + Century + " century");
   }
 
   else{
     alert("Enter a year!");
   }
+}
+
+function multiples(){
+for (let i = 1; i <= 100; i++) {
+  if (i  % 4 === 0 && i % 10 === 0){
+    console.log("TenFour");
+  }
+  else if (i % 10 === 0){
+    console.log("Ten");
+  }
+  else if (i  % 4 === 0){
+    console.log("Four");
+  }
+  else{
+    console.log(i);
+  }
+}
 }
