@@ -10,8 +10,9 @@ function largerNumber(){
     alert( Num2 + " is the larger number");
   }
   
-  else if(Num1 == Num2)
+  else if(Num1 == Num2){
     alert( "Those numbers are the same!");
+  }
   
   else{
     alert( "That's not a number!");
