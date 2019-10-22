@@ -1,6 +1,6 @@
 function largerNumber(){
-  var Num1 = prompt("Enter your first number:","");
-  var Num2 = prompt("Enter your second number:","");
+  var Num1 = parseInt(prompt("Enter your first number:",""));
+  var Num2 = parseInt(prompt("Enter your second number:",""));
 
   if (Num1 > Num2){
     alert( Num1 + " is the larger number" );
@@ -21,16 +21,16 @@ function largerNumber(){
 
 function thirdAngle(){
   
-  var Angle1 = prompt("Enter your first angle:","");
+  var Angle1 = parseInt(prompt("Enter your first angle:",""));
     if (Angle1 > 0 && Angle1 < 178){
-       var Angle2 = prompt("Enter your second angle:","");
+       var Angle2 = parseInt(prompt("Enter your second angle:",""));
     }
 
     else{
       alert("Enter an integer between 1 and 178!");
     }
   
-  var Angle3 = (180 - (+Angle1 + +Angle2));  
+  var Angle3 = (180 - (Angle1+Angle2));  
     if (Angle2 > 0 && Angle2 < 178){
       alert( "The third angle is " + Angle3 );
     }
@@ -41,9 +41,9 @@ function thirdAngle(){
 }
 
 function centuryFromYear(){
-  var Year = prompt("Enter a year","");  
+  var Year = parseInt(prompt("Enter a year",""));  
   
-  if (Year % 100 = 0){
+  if (Year % 100 == 0){
     var Century = (Year / 100);
       alert (Year + " is in the " + Century + " century");
   }
@@ -59,18 +59,18 @@ function centuryFromYear(){
 }
 
 function multiples(){
-for (let i = 1; i <= 100; i++) {
-  if (i  % 4 === 0 && i % 10 === 0){
-    console.log("TenFour");
+  for (let i = 1; i <= 100; i++) {
+    if (i  % 4 === 0 && i % 10 === 0){
+      console.log("TenFour");
+    }
+    else if (i % 10 === 0){
+      console.log("Ten");
+    }
+    else if (i  % 4 === 0){
+      console.log("Four");
+    }
+    else{
+      console.log(i);
+    }
   }
-  else if (i % 10 === 0){
-    console.log("Ten");
-  }
-  else if (i  % 4 === 0){
-    console.log("Four");
-  }
-  else{
-    console.log(i);
-  }
-}
 }
