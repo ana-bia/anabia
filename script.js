@@ -87,8 +87,20 @@ function login(){
     if (userName.toLowerCase() == "anabia" && password == "2003ana"){
         alert("Welcome");
     }
-    
         alert("Stop");
-    
 }
     
+function otherCap(){
+  let msg = prompt("");
+  let output = "";
+    for (let i = 0; i < msg.length; i++) {
+      if (i % 2 == 0){
+        output += (msg[i].toLowerCase());
+        }
+      else{
+        output += (msg[i].toUpperCase());
+      }  
+    }
+    alert(output);
+  }
+  
