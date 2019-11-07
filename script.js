@@ -74,3 +74,21 @@ function multiples(){
     }
   }
 }
+
+function strLength(){
+  let strInput = prompt("Enter a statement");
+    alert(strInput.length);
+  }
+
+function login(){
+  let userName = prompt("User Name:");
+  let password = prompt("Password:");
+      
+    if (userName.toLowerCase() == "anabia" && password == "2003ana"){
+        alert("Welcome");
+    }
+    
+        alert("Stop");
+    
+}
+    
