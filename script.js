@@ -87,7 +87,9 @@ function login(){
     if (userName.toLowerCase() == "anabia" && password == "2003ana"){
         alert("Welcome");
     }
-        alert("Stop");
+    else{
+      alert("Stop");
+    }
 }
     
 function otherCap(){
