@@ -77,7 +77,7 @@ function multiples(){
 
 function strLength(){
   let strInput = prompt("Enter a statement");
-    alert(strInput.length);
+    alert("The length of the string is " + strInput.length);
   }
 
 function login(){
@@ -93,7 +93,7 @@ function login(){
 }
     
 function otherCap(){
-  let msg = prompt("");
+  let msg = prompt("Enter a statement to see something cool");
   let output = "";
     for (let i = 0; i < msg.length; i++) {
       if (i % 2 == 0){
