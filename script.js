@@ -106,3 +106,36 @@ function otherCap(){
     alert(output);
   }
   
+function encrypt() {
+  let msg = prompt("enter your message");
+  let key = prompt("enter a key");
+  let encryptWord = "";
+    const alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.!?,:;'/ ";
+    
+  let first = []; 
+  let second = [];
+    
+    for (let i = 0; i < msg.length; i++) {
+      first.push(alphabet.indexOf(msg.charAt(i))); 
+      second.push(alphabet.indexOf(key.charAt(i % 3)));
+      encryptWord += alphabet.charAt((first[i] + second[i]) % alphabet.length);
+    }
+  console.log(encryptWord);
+}
+
+function decrypt(){
+  let msg = prompt("enter your encrypted message");
+  let key = prompt("enter the key");
+  let decryptWord = [];
+  const alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.!?,:;'/ ";
+  
+  let first = []; 
+  let second = [];
+
+    for (let i = 0; i < msg.length; i++) {
+      first.push(alphabet.indexOf(msg.charAt(i))); 
+      second.push(alphabet.indexOf(key.charAt(i % 3)));
+      decryptWord.push(alphabet.charAt((first[i] - second[i]) % alphabet.length));
+    }
+  console.log(decryptWord.join(""));
+}
