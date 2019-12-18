@@ -121,6 +121,7 @@ function encrypt() {
       encryptWord += alphabet.charAt((first[i] + second[i]) % alphabet.length);
     }
   console.log(encryptWord);
+  alert("Check the console!");
 }
 
 function decrypt(){
@@ -138,4 +139,5 @@ function decrypt(){
       decryptWord.push(alphabet.charAt((first[i] - second[i]) % alphabet.length));
     }
   console.log(decryptWord.join(""));
+  alert("Check the console!");
 }
