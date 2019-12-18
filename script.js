@@ -107,11 +107,11 @@ function otherCap(){
   }
   
 function encrypt() {
-  let msg = prompt("enter your message");
-  let key = prompt("enter a key");
   let encryptWord = "";
-    const alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.!?,:;'/ ";
-    
+  const alphabet = " abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.!?,:;'/";
+  let msg = prompt("Enter your message");
+  let key = prompt("Enter a key");
+
   let first = []; 
   let second = [];
     
@@ -124,10 +124,10 @@ function encrypt() {
 }
 
 function decrypt(){
-  let msg = prompt("enter your encrypted message");
-  let key = prompt("enter the key");
   let decryptWord = [];
-  const alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.!?,:;'/ ";
+  const alphabet = " abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.!?,:;'/";
+  let msg = prompt("Enter the encrypted message");
+  let key = prompt("Enter the key");  
   
   let first = []; 
   let second = [];
